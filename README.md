@@ -45,17 +45,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Deploy
 
 ```bash
-# unit tests
-$ npm run test
+# build docker image
+docker build -t gcr.io/daily-notification-404904/daily-notification:latest .
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# push docker image
+docker push gcr.io/daily-notification-404904/daily-notification:latest
 ```
 
 ## Support
